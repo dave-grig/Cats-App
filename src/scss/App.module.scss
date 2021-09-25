@@ -1,0 +1,19 @@
+@import 'stylesReset';
+
+.app {
+  width: 100%;
+}
+
+.cats {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+@media screen and (max-width: 768px) {
+  .cats {
+    flex-direction: column;
+ 
+  }
+}

@@ -1,0 +1,62 @@
+@import "theme";
+
+.mainScreen {
+  width: 70%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  overflow-y: auto;
+}
+
+.title {
+    width: auto;
+  font-size: 26px;
+  text-transform: uppercase;
+  margin-bottom: 40px;
+  text-align: center;
+  
+}
+
+.textWarning {
+    color: $warning;
+    text-align: center;
+}
+
+.imagesList {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.imageWrapper {
+  width: 25%;
+  height: 100px;
+  padding: 10px;
+  box-shadow: $primaryBoxShadow;
+  box-sizing: border-box;
+  margin: 15px;
+}
+
+.image {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+
+@media screen and (max-width: 768px) {
+  .mainScreen {
+    width: 100%;
+    height: auto;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding: 20px 40px;
+    box-sizing: border-box;
+  }
+
+  .imageWrapper {
+    width: 60%;
+    height: 150px;
+  }
+}

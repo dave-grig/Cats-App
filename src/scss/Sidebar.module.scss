@@ -1,0 +1,30 @@
+@import 'theme';
+
+.sidebar {
+    box-shadow: $primaryBoxShadow;
+    width: 30%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    padding: 40px;
+    box-sizing: border-box;
+}
+
+.title {
+    font-weight: bold;
+    margin-bottom: 40px;
+}
+
+@media screen and (max-width: 768px) {
+  .sidebar {
+      width: 100%;
+    flex-direction: row;
+    flex-wrap: wrap;
+    height: auto;
+  }
+
+  .title {
+      width: auto;
+        font-size: 22px;
+  }
+}
